@@ -1,0 +1,101 @@
+[
+    {
+        "id": "c3dc361e5a32aa37",
+        "type": "tab",
+        "label": "Flow 5",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "5e8926e807b2a0be",
+        "type": "mqtt in",
+        "z": "c3dc361e5a32aa37",
+        "name": "",
+        "topic": "testtopic/FIAP/GlobalSolutionAgilizaMed/senhas",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "60d977ddf085c4e5",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 560,
+        "y": 220,
+        "wires": [
+            [
+                "9eb55c9558a40441"
+            ]
+        ]
+    },
+    {
+        "id": "9eb55c9558a40441",
+        "type": "ui_text_input",
+        "z": "c3dc361e5a32aa37",
+        "name": "",
+        "label": "Senha:",
+        "tooltip": "",
+        "group": "521aa11e407f96ad",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 1000,
+        "y": 220,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "60d977ddf085c4e5",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "broker.hivemq.com",
+        "port": "1883",
+        "clientid": "GusLocalRoots",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "521aa11e407f96ad",
+        "type": "ui_group",
+        "name": "Senha",
+        "tab": "dd5494689f81ce10",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dd5494689f81ce10",
+        "type": "ui_tab",
+        "name": "Senhas",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    }
+]
