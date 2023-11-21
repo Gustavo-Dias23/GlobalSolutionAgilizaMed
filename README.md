@@ -23,6 +23,7 @@ A plataforma propõe um sistema de login rápido e seguro, onde os usuários pod
 
  ## ⚙ Instruções
  * Abra o simulador Wokwi e carregue o arquivo diagram.json e o arquivo sketch.ino
+ * Verifique se as bibliotecas no arquivo libraries.txt estão instaladas
  * Inicie o projeto
  * Caso não tenha node-red instalado na máquina:
    * Faça a instalação do Node.js
